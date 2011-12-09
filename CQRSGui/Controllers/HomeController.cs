@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Web.Mvc;
 using SimpleCQRS;
+using SimpleCQRS.Bus;
+using SimpleCQRS.Commands;
+using SimpleCQRS.ReadModel;
 
 namespace CQRSGui.Controllers
 {
     [HandleError]
     public class HomeController : Controller
     {
-        private FakeBus _bus;
-        private ReadModelFacade _readmodel;
+        private readonly FakeBus _bus;
+        private readonly ReadModelFacade _readmodel;
 
         public HomeController()
         {

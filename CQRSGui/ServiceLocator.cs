@@ -1,4 +1,5 @@
 ﻿using SimpleCQRS;
+using SimpleCQRS.Bus;
 
 namespace CQRSGui
 {
